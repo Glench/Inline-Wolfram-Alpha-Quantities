@@ -1,0 +1,17 @@
+{
+    "name": "Comparable Quantities",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "A browser extension for making sense of numbers using Wolfram Alpha",
+    "content_scripts": [
+        {
+        "matches": ["*://*/*"],
+        "css": ["comparable_quantities.css"],
+        "js": ["underscore-min.js", "jquery-1.8.2.min.js", "comparable_quantities.js"]
+        }
+    ],
+    "web_accessible_resources": ["template.html"],
+    "permissions": [
+        "http://api.wolframalpha.com/"
+    ]
+}

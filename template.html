@@ -1,0 +1,16 @@
+<div class="{{ cssClassPrefix }}">
+    <div class="{{ cssClassPrefix }}-units">
+        <div class="{{ cssClassPrefix }}-header">Units</div>
+        {% _.each(units, function(unit, i) { %}
+            {{ unit }},
+        {% }) %}
+    </div>
+    <div class="{{ cssClassPrefix }}-comparisons">
+        <div class="{{ cssClassPrefix }}-header">Comparisons</div>
+        <ul>
+            {% _.each(comparisons, function(comparison) { %}
+                {{ comparison }}
+            {% }) %}
+        </ul>
+    </div>
+</div>
