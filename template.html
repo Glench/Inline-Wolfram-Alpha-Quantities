@@ -1,15 +1,16 @@
 <div class="{{ cssClassPrefix }}">
+    <a href="#null" class="{{ cssClassPrefix }}-close">x</a>
     <div class="{{ cssClassPrefix }}-units">
         <div class="{{ cssClassPrefix }}-header">Units</div>
         {% _.each(units, function(unit, i) { %}
-            {{ unit }},
+            {{ unit }}
         {% }) %}
     </div>
     <div class="{{ cssClassPrefix }}-comparisons">
         <div class="{{ cssClassPrefix }}-header">Comparisons</div>
         <ul>
             {% _.each(comparisons, function(comparison) { %}
-                {{ comparison }}
+                <li>{{ comparison }}</li>
             {% }) %}
         </ul>
     </div>

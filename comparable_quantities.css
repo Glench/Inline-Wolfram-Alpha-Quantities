@@ -1,0 +1,30 @@
+.comparable-quantities {
+    position: absolute;
+    width: 30%;
+    border: 2px solid #333;
+    background-color: white;
+    padding: 5px;
+}
+.comparable-quantities-header {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    margin: 5px 0;
+}
+.comparable-quantities-close {
+    position: absolute;
+    right: 10px;
+}
+.comparable-quantities-button {
+    position: absolute;
+    z-index: 999999;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: none;
+}
+.comparable-quantities-button a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
